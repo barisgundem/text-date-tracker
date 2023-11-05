@@ -7,12 +7,12 @@ const EditItemScreen = ({ route, navigation }) => {
   const { index, item, handleEdit } = route.params;
   const [editedText, setEditedText] = useState(item.text);
   const [editedDate, setEditedDate] = useState(item.date || new Date());
-  const [showDatePicker, setShowDatePicker] = useState(false); // Control date picker visibility
+  const [showDatePicker, setShowDatePicker] = useState(false); 
 
   const handleSave = () => {
     const newItem = {
       text: editedText,
-      date: editedDate, // Include the edited date
+      date: editedDate, 
     };
     handleEdit(index, newItem);
     navigation.navigate('Home');
