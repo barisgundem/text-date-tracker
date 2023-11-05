@@ -7,7 +7,7 @@ const AddTextScreen = ({ route, navigation }) => {
   const { handleAddText } = route.params;
   const [text, setText] = useState('');
   const [selectedDate, setSelectedDate] = useState(new Date());
-  const [showDatePicker, setShowDatePicker] = useState(false); // Control date picker visibility
+  const [showDatePicker, setShowDatePicker] = useState(false); 
 
   const handleAdd = () => {
     const newItem = { text, date: selectedDate };
